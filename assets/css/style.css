@@ -4,12 +4,91 @@
   height: 100%;
   position: relative;
 }
+:root {
+  --color-1: #186cb8;
+  --color-2: #2a9a9f;
+  --color-3: #f1b211;
+  --color-4: #e83611;
+  --color-5: #f9002f;
+}
+
+.wrapper {
+  background: #000;
+  line-height: 1;
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 16px);
+}
+
+h1 {
+  font-family: "Exo", sans-serif;
+  font-size: 15vw;
+  font-weight: 900;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+  text-transform: uppercase;
+  background: linear-gradient(
+    219deg,
+    var(--color-1) 19%,
+    transparent 19%,
+    transparent 20%,
+    var(--color-2) 20%,
+    var(--color-2) 39%,
+    transparent 39%,
+    transparent 40%,
+    var(--color-3) 40%,
+    var(--color-3) 59%,
+    transparent 59%,
+    transparent 60%,
+    var(--color-4) 60%,
+    var(--color-4) 79%,
+    transparent 79%,
+    transparent 80%,
+    var(--color-5) 80%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.container {
+  padding: 1.5rem;
+  text-align: center;
+  background: radial-gradient(
+      circle at 1.4% 1.4%,
+      var(--color-1) 0.8%,
+      transparent 0.8%
+    ),
+    radial-gradient(circle at 5.5% 3%, var(--color-2) 0.45%, transparent 0.45%),
+    radial-gradient(circle at 2.5% 3.5%, var(--color-3) 0.5%, transparent 0.5%),
+    radial-gradient(
+      circle at 4.5% 1.2%,
+      var(--color-4) 0.25%,
+      transparent 0.25%
+    ),
+    radial-gradient(circle at 98% 98%, var(--color-1) 0.8%, transparent 0.8%),
+    radial-gradient(circle at 95% 95%, var(--color-2) 0.45%, transparent 0.45%),
+    radial-gradient(
+      circle at 94.5% 97.5%,
+      var(--color-3) 0.5%,
+      transparent 0.5%
+    ),
+    radial-gradient(
+      circle at 98.5% 95.5%,
+      var(--color-4) 0.25%,
+      transparent 0.25%
+    );
+}
+
 .happybirthday {
   font-family: "Kodchasan", sans-serif;
   position: absolute;
-  top: -1100px;
-  left: -350px;
-  font-size: 8em;
+  top: -1000px;
+  left: -850px;
+  font-size: 12em;
   padding: 100px;
   margin-bottom: 10%;
 }
@@ -136,7 +215,7 @@ body {
     rotateX(calc(var(--rotate-x, 0) * 1deg))
     rotateY(calc(var(--rotate-y, 0) * 1deg));
 }
-.plane {
+/* .plane {
   height: var(--plane-height);
   width: var(--plane-width);
   position: absolute;
@@ -145,10 +224,10 @@ body {
   transform: translate(-50%, -50%);
   -webkit-animation: roll 10s infinite ease-out alternate;
   animation: roll 10s infinite ease-out alternate;
-}
+} */
 .plane__floater {
   position: absolute;
-  width: var(--plane-width);
+  width: 50%;
   height: var(--plane-width);
   transform: translate(-50%, -50%);
   top: 50%;
