@@ -29,8 +29,8 @@ body {
 
 h1 {
   font-family: "Exo", sans-serif;
-  font-size: 15vw;
-  font-weight: 900;
+  /* font-size: 15vw;
+  font-weight: 900; */
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -92,11 +92,11 @@ h1 {
 .happybirthday {
   font-family: "Kodchasan", sans-serif;
   position: absolute;
-  top: -800px;
+  top: -400px;
   left: -50px;
   font-size: 12em;
-  padding: 100px;
-  margin-bottom: 10%;
+  /* padding: 100px; */
+  /* margin-bottom: 10%; */
 }
 .cuboid__side:nth-of-type(1) {
   height: calc(var(--thickness) * 1vmin);
